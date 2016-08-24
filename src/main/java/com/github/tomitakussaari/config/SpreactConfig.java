@@ -35,7 +35,7 @@ public class SpreactConfig extends WebMvcConfigurerAdapter {
                 "/META-INF/resources/webjars/react/15.0.0/react.min.js",
                 "/META-INF/resources/webjars/react/15.0.0/react-dom-server.min.js",
                 "/META-INF/resources/webjars/babel-standalone/6.7.7/babel.min.js",
-                "/js/nashorn-polyfill.js");
+                "/js/render-with-nashorn.js");
         configurer.setRenderFunction("renderJsx");
         configurer.setSharedEngine(false);
         return configurer;
