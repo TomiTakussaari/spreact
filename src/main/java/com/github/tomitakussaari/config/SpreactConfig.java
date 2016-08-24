@@ -37,6 +37,7 @@ public class SpreactConfig extends WebMvcConfigurerAdapter {
                 "/META-INF/resources/webjars/babel-standalone/6.7.7/babel.min.js",
                 "/js/nashorn-polyfill.js");
         configurer.setRenderFunction("renderJsx");
+        configurer.setSharedEngine(false);
         return configurer;
     }
 }
