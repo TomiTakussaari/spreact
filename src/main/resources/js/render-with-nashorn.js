@@ -15,7 +15,6 @@ function renderWithWithJSONModel(template, model) {
     return ReactDOMServer.renderToStaticMarkup(element);
 }
 
-function renderJsx(template, model) {
-    var jsTemplate = Babel.transform(template, {presets: ['react']}).code;
-    return renderWithWithJSONModel(jsTemplate, model);
+function renderJsx(template) {
+    return Babel.transform(template, {presets: ['react']}).code;
 }
